@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { ArrowRight, Download } from "lucide-react";
 import { GithubIcon, LinkedinIcon, LeetCodeIcon } from "./icons";
@@ -18,18 +19,6 @@ const item = {
     transition: { duration: 0.55, ease: [0.21, 0.47, 0.32, 0.98] as const },
   },
 };
-
-const terminalLines = [
-  { prompt: true, text: "whoami" },
-  { prompt: false, text: "abhishek — b.tech cse @ mnnit allahabad '27" },
-  { prompt: true, text: "leetcode --stats abhi-jha" },
-  { prompt: false, text: "rating: 2070 · knight · top 1.77% worldwide" },
-  { prompt: false, text: "solved: 1114 problems (202 hard)" },
-  { prompt: true, text: "ls ~/projects --featured" },
-  { prompt: false, text: "intelmeet/  sysverse/  video-manager/ ..." },
-  { prompt: true, text: "status" },
-  { prompt: false, text: "open to internships & collaborations ●", accent: true },
-];
 
 export default function Hero() {
   return (
@@ -130,41 +119,23 @@ export default function Hero() {
           </motion.div>
         </div>
 
-        {/* Terminal card */}
+        {/* Photo card */}
         <motion.div variants={item} className="hidden lg:block">
           <div className="overflow-hidden rounded-xl border border-edge bg-surface shadow-[0_0_60px_-15px_rgba(16,185,129,0.25)]">
             <div className="flex items-center gap-2 border-b border-edge bg-surface-2 px-4 py-3">
               <span className="h-3 w-3 rounded-full bg-[#ff5f57]" />
               <span className="h-3 w-3 rounded-full bg-[#febc2e]" />
               <span className="h-3 w-3 rounded-full bg-[#28c840]" />
-              <span className="ml-3 font-mono text-xs text-faint">abhishek@mnnit — zsh</span>
+              <span className="ml-3 font-mono text-xs text-faint">abhishek.jpeg</span>
             </div>
-            <div className="space-y-2 px-5 py-5 font-mono text-[13px] leading-relaxed">
-              {terminalLines.map((line, i) => (
-                <motion.p
-                  key={i}
-                  initial={{ opacity: 0, x: -8 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: 0.8 + i * 0.28, duration: 0.3 }}
-                  className={
-                    line.accent
-                      ? "text-accent"
-                      : line.prompt
-                        ? "text-foreground"
-                        : "text-muted"
-                  }
-                >
-                  {line.prompt && <span className="mr-2 text-accent">❯</span>}
-                  {line.text}
-                </motion.p>
-              ))}
-              <motion.span
-                initial={{ opacity: 0 }}
-                animate={{ opacity: [0, 1, 0] }}
-                transition={{ delay: 3.4, duration: 1, repeat: Infinity }}
-                className="inline-block h-4 w-2 bg-accent align-middle"
-              />
-            </div>
+            <Image
+              src="/abhishek.jpeg"
+              alt="Abhishek Kumar Jha"
+              width={640}
+              height={640}
+              priority
+              className="aspect-square w-full object-cover"
+            />
           </div>
         </motion.div>
       </motion.div>
