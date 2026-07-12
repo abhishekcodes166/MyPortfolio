@@ -25,7 +25,7 @@ export const about = {
   ],
   highlights: [
     { label: "LeetCode Rating", value: "2070" },
-    { label: "Problems Solved", value: "1114" },
+    { label: "Problems Solved", value: "1164" },
     { label: "Global Percentile", value: "Top 1.77%" },
     { label: "Projects Shipped", value: "10+" },
   ],
@@ -188,7 +188,7 @@ export const codingProfiles = [
     stats: [
       { label: "Contest Rating", value: "2070" },
       { label: "Badge", value: "Knight · Top 1.77%" },
-      { label: "Solved", value: "1114 (202 Hard)" },
+      { label: "Solved", value: "1164 (204 Hard)" },
       { label: "Best Contest Rank", value: "#394 global" },
     ],
   },

@@ -1,0 +1,289 @@
+%-------------------------
+% Resume in Latex
+% Author
+% License : MIT
+%------------------------
+
+%---- Required Packages and Functions ----
+
+\documentclass[a4paper,10pt]{article}
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{cfr-lm}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{0pt}
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\geometry{left=1.4cm, top=0.8cm, right=1.2cm, bottom=1cm}
+
+\definecolor{darkblue}{RGB}{0,0,139}
+
+\usepackage[most]{tcolorbox}
+\tcbset{
+	frame code={}
+	center title,
+	left=0pt,
+	right=0pt,
+	top=0pt,
+	bottom=0pt,
+	colback=gray!20,
+	colframe=white,
+	width=\dimexpr\textwidth\relax,
+	enlarge left by=-2mm,
+	boxsep=4pt,
+	arc=0pt,outer arc=0pt,
+}
+
+\urlstyle{same}
+
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item{
+    \textbf{#1}{\hspace{0.5mm}#2 \vspace{-0.5mm}}
+  }
+}
+
+\newcommand{\resumePOR}[3]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1}\hspace{0.3mm}#2 & \textit{\small{#3}}
+    \end{tabular*}
+    \vspace{-2mm}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#4}} \\
+        \textit{\footnotesize{#3}} &  \footnotesize{#2}\\
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeProject}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#3}} \\
+        \footnotesize{\textit{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=0mm]}
+\newcommand{\resumeHeadingSkillStart}{\begin{itemize}[leftmargin=*,itemsep=1.7mm, rightmargin=2ex]}
+\newcommand{\resumeItemListStart}{\begin{justify}\begin{itemize}[leftmargin=3ex, rightmargin=2ex, noitemsep,labelsep=1.2mm,itemsep=0mm]\small}
+
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{2mm}}
+\newcommand{\resumeHeadingSkillEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\end{justify}\vspace{-2mm}}
+\newcommand{\cvsection}[1]{%
+\vspace{2mm}
+\begin{tcolorbox}
+    \textbf{\large #1}
+\end{tcolorbox}
+    \vspace{-4mm}
+}
+
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\newcolumntype{C}{>{\centering\arraybackslash}X}%
+%---- End of Packages and Functions ------
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%
+%%%%%% DEFINE ELEMENTS HERE %%%%%%%
+\newcommand{\name}{Abhishek Kumar Jha} % Your Name
+\newcommand{\course}{Bachelor of Technology} % Your Program
+\newcommand{\roll}{20233504} % Your Roll No.
+\newcommand{\phone}{8368866357} % Your Phone Number
+\newcommand{\emaila}{abhishekjhaa340@gmail.com} %Email 1
+
+\begin{document}
+\fontfamily{cmr}\selectfont
+%----------HEADING-----------------
+
+\parbox{2.35cm}{%
+\includegraphics[width=2cm,clip]{MNNIT logo.jpg}
+}
+\parbox{\dimexpr\linewidth-2.8cm\relax}{
+\begin{tabularx}{\linewidth}{L r} \\
+  \textbf{\Large Abhishek Kumar Jha} & {\raisebox{0.0\height}{\footnotesize \faPhone}\ +91-\phone}\\
+  {Reg No.: 20233504} & \href{mailto:abhishekjhaa340@gmail.com}{\raisebox{0.0\height}{\footnotesize \faEnvelope}\ abhishekjhaa340@gmail.com} \\
+  {Computer Science and Engineering} &  GitHub: \href{https://github.com/abhishekcodes166}{abhishekcodes166} \\
+{Motilal Nehru National Institute of Technology Allahabad, Prayagraj} &
+LinkedIn: \href{https://www.linkedin.com/in/abhishekjha1666}{abhishekjha1666}
+\end{tabularx}
+}
+
+%-----------EDUCATION-----------
+\section{\textbf{Education}}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {MNNIT Allahabad, Prayagraj, India}{CGPA: 7.67}
+    {B.Tech in Computer Science and Engineering}{Aug 2023 -- May 2027}
+  \vspace{-1mm}
+
+  \resumeSubheading
+    {Mithila Institute Of Technology}{GPA: 3.39}
+    {Higher Secondary Education}{Apr 2021 -- Mar 2022}
+  \vspace{-1mm}
+
+  \resumeSubheading
+    {Mithila Institute Of Technology}{GPA: 3.35}
+    {Secondary Education}{Apr 2019 -- Mar 2020}
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{\textbf{Projects}}
+\resumeSubHeadingListStart
+
+\resumeProject
+  {IntelMeet}
+  {\textbf{Real-Time Conferencing Platform}}
+  {May 2025 -- Jun 2025}
+  {[\href{https://github.com/abhishekcodes166/IntelMeet}{\textnormal{\textcolor{darkblue}{GitHub}}}]}
+\textbf{Tech Stack:} React.js, Node.js, Express.js, Socket.IO, WebRTC, MongoDB, JWT, REST APIs
+\vspace{-1mm}
+\resumeItemListStart
+\item Built a full-stack real-time conferencing platform with secure room creation, unique room ID generation, and meeting controls, supporting \textbf{5+ concurrent participants} per room.
+\item Integrated \textbf{WebRTC} for low-latency peer-to-peer audio communication, achieving average audio latency below \textbf{200 ms}.
+\item Developed a \textbf{Socket.IO} signaling server managing room lifecycle, participant synchronization, and real-time event broadcasting.
+\item Implemented \textbf{JWT-based authentication} and authorization over protected \textbf{REST APIs} to secure user sessions and meeting access.
+\resumeItemListEnd
+
+\resumeProject
+  {SysVERSE}
+  {\textbf{System-Design Playground with Live Validation \& Cost Estimation}}
+  {Jul 2026 -- Present}
+  {[\href{https://github.com/abhishekcodes166/SysVERSE}{\textnormal{\textcolor{darkblue}{GitHub}}}]}
+\textbf{Tech Stack:} React 18, TypeScript, Vite, ReactFlow, Node.js, Express.js, MongoDB, Tailwind CSS
+\vspace{-1mm}
+\resumeItemListStart
+\item Built a browser-based \textbf{system-design playground} where users architect distributed systems on a drag-and-drop \textbf{ReactFlow} canvas using \textbf{10 configurable components} — clients, CDNs, load balancers, caches, message queues, and databases.
+\item Engineered a \textbf{live validation engine} that flags architectural flaws in real time — unconnected components, missing database replicas, and capacity shortfalls against target \textbf{RPS}.
+\item Implemented a \textbf{traffic-modeling cost engine} that converts daily active users into itemized monthly cost estimates based on real \textbf{AWS/GCP} pricing.
+\item Designed a fully \textbf{data-driven architecture}: all component types render through a single typed ReactFlow node, with config schemas (DB shards/replicas, cache TTL, load-balancing algorithms, autoscaling), validation rules, and pricing decoupled from the UI.
+\item Secured authentication with \textbf{JWT in httpOnly cookies} and \textbf{bcrypt} password hashing; enabled per-user save/load of designs in \textbf{MongoDB} with one-click JSON export.
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{\textbf{Technical Skills}}
+\resumeHeadingSkillStart
+  \resumeSubItem{Programming Languages:}
+    {C++, Python, JavaScript, TypeScript, SQL}
+  \resumeSubItem{Frontend:}
+    {React.js, Next.js, HTML, CSS, Tailwind CSS, Vite}
+  \resumeSubItem{Backend:}
+    {Node.js, Express.js, REST APIs, Socket.IO, WebRTC, JWT Authentication}
+  \resumeSubItem{Databases:}
+    {MongoDB, MySQL}
+  \resumeSubItem{Machine Learning \& AI:}
+    {Machine Learning Algorithms, Natural Language Processing (NLP), Model Deployment (Flask, Streamlit), Data Visualization (Matplotlib, Seaborn, Plotly)}
+  \resumeSubItem{Developer Tools:}
+    {Git, GitHub, Postman, Linux, VS Code}
+  \resumeSubItem{Computer Science Fundamentals:}
+    {Data Structures \& Algorithms, Object-Oriented Programming (OOP), Operating Systems, Database Management Systems (DBMS), Computer Networks, System Design}
+\resumeHeadingSkillEnd
+
+%-----------CODING PROFILES-----------
+\section{\textbf{Coding Profiles}}
+\resumeSubHeadingListStart
+
+\resumeSubItem{LeetCode}{
+  \textbf{Knight} (Max Rating \textbf{2070}, top \textbf{1.77\%} worldwide); solved \textbf{1114+} problems including \textbf{202 hard}
+  \vspace{1mm}
+  \href{https://leetcode.com/u/abhi-jha/}{\textcolor{darkblue}{\textbf{@abhi-jha}}}
+}
+
+\vspace{1mm}
+
+\resumeSubItem{GeeksforGeeks}{
+  Active problem-solving profile with consistent contest participation
+  \vspace{1mm}
+  \href{https://www.geeksforgeeks.org/user/abhishekh8mek/}{\textcolor{darkblue}{\textbf{@abhishekh8mek}}}
+}
+
+\vspace{1mm}
+
+\resumeSubItem{CodeChef}{
+  Regular competitive programming contest participant
+  \vspace{1mm}
+  \href{https://www.codechef.com/users/avisekcodes}{\textcolor{darkblue}{\textbf{@avisekcodes}}}
+}
+
+\resumeSubHeadingListEnd
+
+%-----------ACHIEVEMENTS-----------
+\section{\textbf{Achievements}}
+\resumeSubHeadingListStart
+
+\resumeSubItem{Competitive Programming}{
+\resumeItemListStart
+\item Secured Global Rank \textbf{394} among \textbf{30,000+} participants in a LeetCode contest; consistently ranked in the top \textbf{4\%}.
+\item Achieved \textbf{Top 1500} rank among \textbf{200,000+} participants in the Google Big Code Competition.
+\resumeItemListEnd
+}
+
+\resumeSubItem{Startup \& Innovation}{
+\resumeItemListStart
+\item Won \textbf{3rd Prize} among \textbf{20+} startup pitches at \textbf{Udbhav-2024, E-Summit Renaissance}.
+\resumeItemListEnd
+}
+
+%-----------POSITIONS OF RESPONSIBILITY-----------
+\section{\textbf{Positions of Responsibility}}
+\normalsize
+
+\resumeSubHeadingListStart
+
+\resumeSubItem{Leadership}{
+\normalsize
+\resumeItemListStart
+\item \textbf{Captain, MNNIT Cricket Club} — leading team selection, strategy, and training for inter-college tournaments.
+\item \textbf{Class Representative} — liaison between faculty and 100+ students for academic coordination.
+\item \textbf{Media Lead}, cultural event — managed a team of \textbf{10 content creators} covering event promotion and coverage.
+\resumeItemListEnd
+}
+
+\resumeSubHeadingListEnd
+
+\vspace{-6mm}
+
+%-------------------------------------------
+\end{document}
