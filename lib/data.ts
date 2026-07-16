@@ -106,6 +106,38 @@ export const featuredProjects: Project[] = [
     live: "https://intel-meet.vercel.app",
   },
   {
+  name: "AI Attendance System",
+  period: "Jul 2026 — Present",
+  summary: "Face recognition attendance system with FaceNet & anti-spoofing",
+  description:
+    "A secure AI-powered attendance management system that automates user registration and attendance using FaceNet facial embeddings. The platform captures 200 images during one-time registration, performs real-time face recognition through a webcam, detects spoofing attempts, and maintains attendance records through a Flask-based web application.",
+  tech: [
+    "Python",
+    "Flask",
+    "FaceNet",
+    "TensorFlow",
+    "OpenCV",
+    "SQLite",
+    "HTML",
+    "CSS",
+    "JavaScript",
+  ],
+  features: [
+    "One-time face registration capturing 200 images from multiple angles to generate robust facial embeddings",
+    "Real-time face recognition using FaceNet embeddings and OpenCV-based face detection",
+    "Face anti-spoofing pipeline to detect presentation attacks such as photos and mobile screens",
+    "Automated attendance logging with timestamp, user management, and attendance history",
+    "Admin dashboard for registration, attendance records, and user profile management",
+  ],
+  challenges: [
+    "Built an end-to-end facial recognition pipeline integrating OpenCV preprocessing with FaceNet embedding extraction",
+    "Designed a registration workflow that captures diverse facial samples to improve recognition accuracy under varying conditions",
+    "Integrated anti-spoofing with recognition while maintaining low-latency real-time inference",
+    "Developed a modular Flask backend with SQLite persistence for user profiles, facial embeddings, and attendance records",
+  ],
+  github: "https://github.com/yourusername/AI-Attendance-System",
+},
+{
     name: "SysVERSE",
     period: "Jul 2026 — Present",
     summary: "System-design playground with live validation & cost estimation",
@@ -156,27 +188,6 @@ export const featuredProjects: Project[] = [
     ],
     github: "https://github.com/abhishekcodes166/video-manager",
     live: "https://video-manager-seven.vercel.app",
-  },
-  {
-    name: "WhatsApp Chat Analyzer",
-    period: "2025",
-    summary: "Chat analytics with sentiment insights, trends & word clouds",
-    description:
-      "A data-analysis app that turns exported WhatsApp conversations into interactive dashboards: message and word statistics, user-wise participation, daily/monthly activity trends, emoji breakdowns, and word clouds — for both group and individual chats. Deployed live on Streamlit.",
-    tech: ["Python", "Streamlit", "Pandas", "Matplotlib", "Seaborn", "WordCloud", "Regex"],
-    features: [
-      "Message, word, media, and link statistics per chat and per user",
-      "Activity timelines, weekly heatmaps, and busiest hours/days",
-      "Word cloud and most-frequent-words analysis with emoji statistics",
-      "Works on both group and one-to-one chat exports",
-    ],
-    challenges: [
-      "Parsed inconsistent WhatsApp export formats across devices and locales with robust regex",
-      "Cleaned multilingual text and emoji noise so NLP stats stay meaningful",
-      "Kept interactive charts responsive on large chat histories",
-    ],
-    github: "https://github.com/abhishekcodes166/whatsapp-chat-analyzer",
-    live: "https://whatsapp-chat-analyzer-hxn67fn7fyczupd7aegvxd.streamlit.app/",
   },
 ];
 
